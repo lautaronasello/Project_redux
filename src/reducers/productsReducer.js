@@ -17,7 +17,7 @@ import {
 //cada reducer tiene su propio state
 const initialState = {
   products: [],
-  roor: null,
+  error: null,
   loading: false,
   deleteProduct: null,
   editProduct: null,

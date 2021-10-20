@@ -1,11 +1,6 @@
 {
   "productos": [
     {
-      "name": "deodorante",
-      "price": 654,
-      "id": 1
-    },
-    {
       "name": "mochila",
       "price": 65465,
       "id": 2
@@ -14,6 +9,11 @@
       "name": "mochila",
       "price": 123,
       "id": 3
+    },
+    {
+      "name": "desodo",
+      "price": 500,
+      "id": 4
     }
   ]
 }

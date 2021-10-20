@@ -1,15 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router';
 
 export default function EditProducts() {
   const dispatch = useDispatch();
 
-  const name = useSelector((state) => state.products.editProduct.name);
-  const price = useSelector((state) => state.products.editProduct.price);
-  if (!name) return null;
-  if (!price) return null;
+  const editProduct = useSelector((state) => state.products.editProduct);
+  if (!editProduct) return null;
+
+  const { name, price } = editProduct;
 
   return (
     <div className='row justify-content-center'>
